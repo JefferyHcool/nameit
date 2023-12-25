@@ -1,8 +1,9 @@
 <div align="center">
   <h1>Name IT - 命了个名</h1>
+</div>
 
 <a href="https://www.sinoute.club/#/">
-  <img src="F:\02_个人项目\0_nameIt\name_it\doc\banner.png" alt="name it" /></a>
+  <img src="./doc/01.png" alt="name it" /></a>
 
 ## 🎉项目起源
 
@@ -35,7 +36,7 @@
    > - **明确表达**：用清晰、具体的词语描述变量的用途和功能，避免模糊或过于泛泛的描述。
    > - **简洁精炼**：尽量减少不必要的词汇，直接传达核心意图。
 
-   <img src="F:\02_个人项目\0_nameIt\name_it\doc\01.png" alt="website-cover" />
+   <img src="/doc/01.png" alt="website-cover" />
 
 2. **丰富的生成控制**
 
@@ -48,7 +49,7 @@
    - **变量的长度**：最大为10 最小为2
    - **生成数量**：一次生成的数量，目前只支持一次性最大8个变量
 
-<img src="F:\02_个人项目\0_nameIt\name_it\doc\02.png" alt="website-cover" style="zoom: 67%;" />
+<img src="./doc/02.png" alt="website-cover" style="zoom: 67%;" />
 
 3. **历史列表**
 
