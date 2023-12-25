@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - "3678:3678"       # 映射前端容器的端口3678到主机的端口3678
+    networks:
+      - mynetwork
+
+  backend:
+    build:
+      context: backend   # 后端项目的Dockerfile所在目录
+    ports:
+      - "5421:5421"        # 映射后端容器的端口5421到主机的端口5421
+    networks:
+      - mynetwork
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379" # redis 的地址
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
