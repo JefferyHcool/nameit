@@ -114,7 +114,7 @@ limiter = Limiter(get_remote_address, app=app, default_limits=["200 per day", "5
 <table>
   <tr>
     <th>支付宝</th>
-    <td><img src="doc/alipay.jpg" alt="支付宝" width="150"></td>
+    <td><img src="doc/Alipay.jpg" alt="支付宝" width="150"></td>
   </tr>
   <tr>
     <th>微信</th>
