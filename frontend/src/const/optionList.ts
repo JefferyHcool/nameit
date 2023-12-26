@@ -100,9 +100,32 @@ const programmingLanguages = [
     logo: logos.phpLogo // Assuming phpLogo is imported
   },
   {
+    label: 'C',
+    value: 'c',
+    logo: logos.cLogo // Assuming cppLogo is imported
+  },
+  {
+    label: 'go',
+    value: 'go',
+    logo: logos.goLogo // Assuming cppLogo is imported
+  },
+  {
     label: 'C++',
     value: 'cpp',
     logo: logos.cppLogo // Assuming cppLogo is imported
+  },
+  {    label: 'css',
+    value: 'css',
+    logo: logos.cssLogo
+  },
+  {    label: 'html',
+    value: 'html',
+    logo: logos.htmlLogo
+  },
+  {
+    label: 'lua',
+    value: 'lua',
+    logo: logos.luaLogo // Assuming cppLogo is imported
   },
   {
     label: 'Ruby',

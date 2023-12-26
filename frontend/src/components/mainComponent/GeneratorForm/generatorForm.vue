@@ -14,7 +14,7 @@ const modelRef = ref<GeneratorData>({
   prefix: null, // 变量的前缀
   suffix: null, // 后缀
   length: null, // 变量名的长度 不得超过这个长度
-  mount: 4 // 生成的数量 默认4
+  mount: 1 // 生成的数量 默认4
 })
 const isLoading = ref(false)
 const trim = (value: string): SelectOption => {
