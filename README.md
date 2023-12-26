@@ -3,7 +3,7 @@
 </div>
 
 <a href="https://www.sinoute.club/#/">
-  <img src="./doc/01.png" alt="name it" /></a>
+  <img src="./doc/banner.png" alt="name it" /></a>
 
 ## 🎉项目起源
 
