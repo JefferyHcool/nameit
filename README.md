@@ -91,7 +91,7 @@ NameIT 提供了 Docker 的方法部署，这使你可以在几分钟内构建�
 
 ### 配置
 
-项目目前不支持更改 ` redis `地址，如果有冲突自行更改 ` docker-compose.yml` 文件中的 `redis`下面的 ` ports`   以及 ` main.py` 中
+项目目前不支持更改 ` redis `地址，如果有冲突自行更改 ` docker-compose.yml` 文件中的 `redis`下面的 ` ports`   以及 ` main.py` 中所有的 6379 改为你自己的 ` redis` port
 
 ``` python
 redis_store = redis.StrictRedis(host='redis', port=6379, db=0)
@@ -99,10 +99,25 @@ limiter = Limiter(get_remote_address, app=app, default_limits=["200 per day", "5
 
 ```
 
-所有的 6379 改为你自己的 ` redis` port
+
 
 ## 🔒隐私声明
 
 该项目高度重视隐私，致力于保护其用户的隐私。该项目不会以任何方式收集、记录或存储用户输入的任何文本或由 OpenAI 服务器返回的任何文本。该项目不会向 OpenAI 或任何第三方提供有关 API 调用者的身份的任何信息，包括但不限于 IP 地址和用户代理字符串。该项目的源代码可供检查，以验证此声明。
 
 然而，OpenAI API 根据其[数据使用政策](https://platform.openai.com/docs/data-usage-policies)保留 30 天的数据。
+
+## 🪙赞助我！
+
+如果您发现Name IT 有用，请考虑在 GitHub 上[赞助作者](https://github.com/JefferyHcool)，以支持持续的开发和维护。您的支持将帮助他维护此项目谢谢您的支持！
+
+<table>
+  <tr>
+    <th>支付宝</th>
+    <td><img src="doc/alipay.jpg" alt="支付宝" width="150"></td>
+  </tr>
+  <tr>
+    <th>微信</th>
+    <td><img src="doc/wechat pay.jpg" alt="微信" width="150"></td>
+  </tr>
+</table>
