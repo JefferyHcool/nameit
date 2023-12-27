@@ -9,6 +9,7 @@ function appInit() {
   const app = createApp(App)
   setupStore(app)
   setupNaive(app)
+
   setupRouter(app)
   app.mount('#app', true)
 }

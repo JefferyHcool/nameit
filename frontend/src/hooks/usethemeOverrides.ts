@@ -1,11 +1,11 @@
 import { useDesignStore } from '@/store/moudles/designStore.ts'
 import { computed, toRefs } from 'vue'
-import { darkTheme, GlobalThemeOverrides } from 'naive-ui'
+import { GlobalThemeOverrides } from 'naive-ui'
 
 export const useThemeOverridesHook = () => {
   const designStore = useDesignStore()
   const { getTheme } = toRefs(designStore)
-  const appTheme = computed((): GlobalThemeOverrides => {
+  return computed((): GlobalThemeOverrides => {
     // 通用
 
     // 亮色主题
@@ -42,5 +42,4 @@ export const useThemeOverridesHook = () => {
 
     return !getTheme.value ? dartObject : lightObject
   })
-  return appTheme
 }

@@ -11,8 +11,10 @@ import swiftLogo from 'programming-languages-logos/src/swift/swift.svg'
 import cssLogo from 'programming-languages-logos/src/css/css.svg'
 import htmlLogo from 'programming-languages-logos/src/html/html.svg'
 import cLogo from 'programming-languages-logos/src/c/c.svg'
-import goLogo from 'programming-languages-logos/src/go/go.png'
+import goLogo from 'programming-languages-logos/src/go/go.svg'
 import luaLogo from 'programming-languages-logos/src/lua/lua.svg'
+import vueLogo from '../assets/vue.svg'
+import reactLogo from '../assets/icons/icons8-react-480.svg'
 // Export them as a single object
 const logos = {
   javascriptLogo,
@@ -28,7 +30,9 @@ const logos = {
   htmlLogo,
   cLogo,
   goLogo,
-  luaLogo
+  luaLogo,
+  vueLogo,
+  reactLogo
 }
 
 export { logos }

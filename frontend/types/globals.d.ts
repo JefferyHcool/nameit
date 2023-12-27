@@ -6,6 +6,15 @@ interface Window {
   $t: any
   $vue: any
 }
+declare module '*.svg' {
+  const content: string
+  export default content
+}
+declare module 'typeit' {
+  const TypeIt: any
+  export = TypeIt
+}
+
 interface GeneratorData {
   variable: string | null // 变量的中文名称或描述
   language?: string | null // 变量使用的编程语言

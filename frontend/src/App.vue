@@ -6,7 +6,7 @@ import { zhCN, dateZhCN } from 'naive-ui'
 const appTheme = useThemeOverridesHook()
 const datelocal = dateZhCN
 const local = zhCN
-import { watchEffect } from 'vue'
+import { readonly, ref, watchEffect } from 'vue'
 import { useDesignStore } from '@/store/moudles/designStore.ts'
 const isDark = useDesignStore().getTheme
 // 假设这是您用来判断主题的响应式变量

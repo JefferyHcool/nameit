@@ -1,6 +1,19 @@
 import { logos } from '@/plugins/programeLogo.ts'
+interface programmingConstruct {
+  label: string
+  value: string
+}
+interface programmingLanguage {
+  label: string
+  value: string
+  logo: string
+}
 
-const programmingConstructs = [
+interface nameStyle {
+  label: string
+  value: string
+}
+const programmingConstructs: programmingConstruct[] = [
   {
     label: '函数', // Function
     value: 'function'
@@ -8,6 +21,14 @@ const programmingConstructs = [
   {
     label: '常量', // Constant
     value: 'constant'
+  },
+  {
+    label: 'Vue组件', // Function
+    value: 'vue component'
+  },
+  {
+    label: 'React 组件', // Function
+    value: 'React component'
   },
   {
     label: '类型', // Type
@@ -24,6 +45,10 @@ const programmingConstructs = [
   {
     label: '枚举', // Enum
     value: 'enum'
+  },
+  {
+    label: '项目',
+    value: 'project'
   },
   {
     label: '宏', // Macro
@@ -68,79 +93,83 @@ const programmingConstructs = [
   // Add more constructs as needed
 ]
 
-const programmingLanguages = [
+const programmingLanguages: programmingLanguage[] = [
   {
     label: 'JavaScript',
     value: 'javascript',
-    logo: logos.javascriptLogo // Assuming javascriptLogo is imported
+    logo: logos.javascriptLogo
   },
   {
     label: 'TypeScript',
     value: 'TypeScript',
-    logo: logos.typescriptLogo // Assuming javascriptLogo is imported
+    logo: logos.typescriptLogo
   },
   {
     label: 'Python',
     value: 'python',
-    logo: logos.pythonLogo // Assuming pythonLogo is imported
+    logo: logos.pythonLogo
   },
   {
     label: 'Java',
     value: 'java',
-    logo: logos.javaLogo // Assuming javaLogo is imported
+    logo: logos.javaLogo
   },
   {
     label: 'C#',
     value: 'csharp',
-    logo: logos.csharpLogo // Assuming csharpLogo is imported
+    logo: logos.csharpLogo
   },
   {
     label: 'PHP',
     value: 'php',
-    logo: logos.phpLogo // Assuming phpLogo is imported
+    logo: logos.phpLogo
   },
   {
     label: 'C',
     value: 'c',
-    logo: logos.cLogo // Assuming cppLogo is imported
+    logo: logos.cLogo
   },
   {
     label: 'go',
     value: 'go',
-    logo: logos.goLogo // Assuming cppLogo is imported
+    logo: logos.goLogo
   },
   {
     label: 'C++',
     value: 'cpp',
-    logo: logos.cppLogo // Assuming cppLogo is imported
+    logo: logos.cppLogo
   },
-  {    label: 'css',
-    value: 'css',
-    logo: logos.cssLogo
-  },
-  {    label: 'html',
-    value: 'html',
-    logo: logos.htmlLogo
-  },
+  { label: 'css', value: 'css', logo: logos.cssLogo },
+  { label: 'html', value: 'html', logo: logos.htmlLogo },
   {
     label: 'lua',
     value: 'lua',
-    logo: logos.luaLogo // Assuming cppLogo is imported
+    logo: logos.luaLogo
   },
   {
     label: 'Ruby',
     value: 'ruby',
-    logo: logos.rubyLogo // Assuming rubyLogo is imported
+    logo: logos.rubyLogo
   },
   {
     label: 'Swift',
     value: 'swift',
-    logo: logos.swiftLogo // Assuming swiftLogo is imported
+    logo: logos.swiftLogo
+  },
+  {
+    label: 'vue',
+    value: 'vue',
+    logo: logos.vueLogo
+  },
+  {
+    label: 'React',
+    value: 'React',
+    logo: logos.reactLogo
   }
   // Add more languages as needed
 ]
 
-const nameStyle = [
+const nameStyle: nameStyle[] = [
   {
     label: '小驼峰式命名（lowerCamelCase）',
     value: 'lowerCamelCase'
